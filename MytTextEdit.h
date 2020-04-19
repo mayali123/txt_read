@@ -10,10 +10,8 @@ class MytTextEdit : public QTextEdit
 public:
 	MytTextEdit(QWidget*parent);
 	~MytTextEdit();
-	void keyPressEvent(QKeyEvent* e);
-	void mousePressEvent(QMouseEvent* e);
+	void keyPressEvent(QKeyEvent* e);				//重写键盘按下事件	
 signals:
-	void saveEvent();
-	void mousepress();
-	void addDown(bool i);
+	void saveEvent();								//保存的信号								
+	void addDown(bool i);							//放大和缩小的信号
 };
